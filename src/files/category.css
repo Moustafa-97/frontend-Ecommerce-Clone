@@ -1,0 +1,23 @@
+.category-carosel {
+    margin: auto;
+    padding-bottom: 30px;
+    width: 100%;
+    
+  }
+  .category-carosel-container {
+    width: 92.75%;
+    margin: auto;
+    padding-top: 15px;
+    background: #f2f2f2;
+  }
+  
+  @media (min-width:464) and (max-width: 750) {
+    
+  }
+  .category-carosel img {
+    width: 150px;
+    height: 150px;
+    margin: auto;
+    align-self: center;
+    padding: 0;
+}

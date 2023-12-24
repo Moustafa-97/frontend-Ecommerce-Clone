@@ -1,0 +1,128 @@
+.header {
+  /* margin: auto; */
+  background-color: yellow;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: auto;
+  padding-left: auto;
+  margin: auto;
+}
+.header .header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  margin: auto;
+}
+.header .header-container .logo {
+  width: 10%;
+  margin-left: 0;
+}
+@media (min-width: 0px) and (max-width: 764px) {
+  .header .header-container .logo {
+    width: 15%;
+    margin-left: 0;
+  }
+}
+.header .header-container .logo img {
+  width: 100%;
+  margin: auto;
+}
+.header .header-container .search-bar {
+  width: 50%;
+}
+.header .header-container .search-bar input {
+  width: 100%;
+  height: 35px;
+  margin: auto;
+  border: #fff;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+.header .header-container .search-bar input[type="search"]:focus {
+  outline: none;
+}
+.header .header-container .search-bar input::placeholder {
+  text-align: center;
+}
+.header-top .header-container .user-side {
+  width: 30%;
+}
+.user-side {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.user-side .user-side-list {
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  list-style: none;
+  margin: auto;
+  text-decoration: none;
+  color: #000000;
+}
+.user-side-btn {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .header {
+    position: relative;
+  }
+  .user-side-btn {
+    display: block;
+    margin: auto;
+  }
+  .user-side-menu {
+    position: absolute;
+    background-color: #fff;
+    width: 40%;
+    height: fit-content;
+    margin: auto;
+    top: 100%;
+    right: 0;
+    z-index: 5000;
+    /* transform: translateX(300px);
+    -webkit-transform: translateX(300px);
+    -moz-transform: translateX(300px);
+    -ms-transform: translateX(300px);
+    -o-transform: translateX(300px); */
+  }
+  /* .hide-user-side-menu {
+    transform: translateX(00px);
+    -webkit-transform: translateX(00px);
+    -moz-transform: translateX(00px);
+    -ms-transform: translateX(00px);
+    -o-transform: translateX(00px);
+  } */
+
+  .user-side-menu-list {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    list-style: none;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+  }
+  .login,
+  .wishlist,
+  .cart {
+    display: none;
+  }
+  .bg-show {
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+    z-index: 4999;
+    opacity: 0;
+    position: absolute;
+  }
+}

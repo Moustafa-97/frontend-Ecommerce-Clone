@@ -1,0 +1,150 @@
+.menu-cat,
+.menu {
+  width: 125%;
+  height: 400px;
+  overflow: hidden;
+  padding: 0;
+  left: 0;
+  top: 45px;
+  background-color: white;
+  position: absolute;
+  z-index: 5000;
+  display: flex;
+  align-items: self-start;
+  justify-content: flex-start;
+}
+.menu-cat {
+  width: 50%;
+}
+
+.menu-cat .list {
+  padding: 0px;
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  scroll-margin: auto;
+}
+.menu .list {
+  width: 15%;
+  height: 100%;
+  overflow-y: scroll;
+  scroll-margin: auto;
+}
+.menu .list ul {
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+.menu .list ul li {
+  width: 100%;
+  text-align: start;
+}
+.menu-cat .list ul li,
+.menu .list ul li {
+  list-style: none !important;
+  padding: 10px !important;
+}
+.menu-cat .list ul li:hover,
+.menu .list ul li:hover {
+  color: blue !important;
+}
+.menu-cat .menu-link,
+.menu .menu-link {
+  color: #6c7a84;
+  font-size: 18px;
+  display: block;
+  text-decoration: none;
+}
+.menu .images-list {
+  width: 40%;
+  height: 90%;
+  display: flex;
+  align-self: center;
+  justify-self: center;
+}
+.menu .images-list .first-img {
+  width: 60%;
+  padding: 10px;
+  height: 100%;
+}
+.menu .images-list .sec-img {
+  width: 40%;
+  padding: 10px;
+  height: 100%;
+}
+.menu .images-list .first-img img,
+.menu .images-list .sec-img img {
+  width: 100%;
+  height: 100%;
+}
+.menu .top-brands {
+  width: 40%;
+  height: 100%;
+}
+.top-brands h2 {
+  text-align: start;
+  margin-bottom: 10px;
+  font-size: 25px;
+  position: relative;
+}
+.top-brands h2::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  height: 5px;
+  width: 100%;
+  background-color: #000000;
+}
+.top-brands-types {
+  width: 100%;
+  height: 90%;
+}
+.top-brands-imgs {
+  width: 100%;
+  height: 100%;
+}
+.top-brands-imgs ul {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  /* background: red; */
+}
+.top-brands-imgs ul li {
+  width: 30%;
+  height: 30%;
+  padding: 10px;
+}
+.top-brands-imgs ul li .tbl {
+  width: 50%;
+  background: #000 !important;
+  height: 10%;
+  /* padding: 10px; */
+}
+.top-brands-imgs ul li img {
+  width: 100%;
+  height: 100%;
+}
+
+.show {
+  display: block;
+  opacity: 1;
+  cursor: default;
+  transition: opacity 2s;
+  -webkit-transition: opacity 2s;
+  -moz-transition: opacity 2s;
+  -ms-transition: opacity 2s;
+  -o-transition: opacity 2s;
+}
+.hide {
+  display: none;
+  opacity: 0;
+  transition: opacity 2s;
+  -webkit-transition: opacity 2s;
+  -moz-transition: opacity 2s;
+  -ms-transition: opacity 2s;
+  -o-transition: opacity 2s;
+}
