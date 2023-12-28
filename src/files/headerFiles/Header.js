@@ -42,6 +42,7 @@ export default function Header() {
   const [logout, setLogout] = useState(false);
   const handleLogout = () => {
     localStorage.removeItem("ThisUser");
+    setLogout(false);
   };
   const navigate = useNavigate();
   return (

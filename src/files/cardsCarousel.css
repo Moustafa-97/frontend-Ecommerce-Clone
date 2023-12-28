@@ -37,6 +37,7 @@
     -o-border-radius: 10px;
   }
   .card .card-pic {
+    /* object-fit: cover; */
     position: relative;
     text-align: center;
     width: 100%;

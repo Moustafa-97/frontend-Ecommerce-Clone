@@ -54,7 +54,7 @@ export default function CardsCarousel(props) {
               <Link to={`/products/${prod.id}`} className="productLink">
                 <div key={Math.random()} className="card">
                   <div key={Math.random()} className="card-pic">
-                    <img key={Math.random()} src={prod.thumbnail} alt="prod" />
+                    <img key={Math.random()} src={prod.thumbnail} alt="prod" className=" object-cover "/>
                   </div>
                   <div className="card-description">
                     <p className="desc" key={Math.random()}>
